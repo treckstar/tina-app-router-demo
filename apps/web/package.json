@@ -4,7 +4,7 @@
   "description": "full stack web developer",
   "author": "Daren Malfait <daren@nerdfish.be> (https://nerdfish.be)",
   "scripts": {
-    "build": "dotenv -e ../../.env tinacms build -- -c \"dotenv -e ../../.env next build\"",
+    "build": "dotenv -e ../../.env tinacms build  -- --datalayer-port 9682 -c \"dotenv -e ../../.env next build\"",
     "postbuild": "node ./lib/scripts/build-algolia-search.js",
     "clean": "rm -rf .next dist node_modules .turbo",
     "dev": "tinacms dev --datalayer-port 9382 --verbose -c \"dotenv -e ../../.env next dev\"",
