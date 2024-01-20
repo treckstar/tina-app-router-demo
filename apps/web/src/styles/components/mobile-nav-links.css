@@ -1,0 +1,8 @@
+.mobile-nav-links > a:not(.group),
+.mobile-nav-links > button:not(.group) {
+  @apply rounded-none border-b border-gray-200 px-8 py-5 text-left text-primary hover:bg-secondary hover:text-primary focus:bg-secondary dark:border-gray-800;
+}
+
+.mobile-nav-links > a.group {
+  @apply mx-auto !my-8 flex w-auto;
+}

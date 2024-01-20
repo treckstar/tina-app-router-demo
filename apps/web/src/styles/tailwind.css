@@ -1,0 +1,21 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    @apply min-h-screen max-w-full overscroll-none font-sans;
+  }
+
+  body {
+    @apply min-h-screen bg-primary;
+  }
+
+  .prose pre {
+    @apply bg-secondary;
+  }
+
+  .prose pre {
+    @apply bg-secondary;
+  }
+}

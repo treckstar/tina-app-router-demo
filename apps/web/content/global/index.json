@@ -1,0 +1,37 @@
+{
+  "navigation": {
+    "main": [
+      {
+        "href": "blog",
+        "label": "blog"
+      },
+      {
+        "href": "wiki",
+        "label": "wiki"
+      },
+      {
+        "href": "products",
+        "label": "products"
+      }
+    ],
+    "actions": [
+      {
+        "href": "contact",
+        "label": "contact"
+      }
+    ]
+  },
+  "social": {
+    "twitter": "https://twitter.com/darenmalfait",
+    "github": "https://github.com/darenmalfait"
+  },
+  "paths": {
+    "wiki": "wiki",
+    "blog": "blog",
+    "contact": "contact"
+  },
+  "companyInfo": {
+    "companyName": "Daren Malfait BV",
+    "vat": "BE0794123756"
+  }
+}

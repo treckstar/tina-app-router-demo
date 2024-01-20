@@ -1,0 +1,125 @@
+query contentQuery($relativePath: String!) {
+  page(relativePath: $relativePath) {
+    ...PageParts
+  }
+  blogConnection(sort: "date", last: -1) {
+    edges {
+      node {
+        ...BlogParts
+        id
+        _sys {
+          filename
+          basename
+          breadcrumbs
+          path
+          relativePath
+          extension
+        }
+      }
+    }
+  }
+  wikiConnection(sort: "date", last: -1) {
+    edges {
+      node {
+        ...WikiParts
+        id
+        _sys {
+          filename
+          basename
+          breadcrumbs
+          path
+          relativePath
+          extension
+        }
+      }
+    }
+  }
+  productConnection {
+    edges {
+      node {
+        ...ProductParts
+        id
+        _sys {
+          filename
+          basename
+          breadcrumbs
+          path
+          relativePath
+          extension
+        }
+      }
+    }
+  }
+}
+
+query blogPostQuery($relativePath: String!) {
+  blog(relativePath: $relativePath) {
+    ...BlogParts
+  }
+  blogConnection(sort: "date", last: -1) {
+    edges {
+      node {
+        ...BlogParts
+        id
+        _sys {
+          filename
+          basename
+          breadcrumbs
+          path
+          relativePath
+          extension
+        }
+      }
+    }
+  }
+}
+
+query wikiQuery($relativePath: String!) {
+  wiki(relativePath: $relativePath) {
+    ...WikiParts
+  }
+}
+
+query sitemapQuery {
+  pageConnection {
+    edges {
+      node {
+        title
+        id
+        _sys {
+          filename
+        }
+      }
+    }
+  }
+  blogConnection {
+    edges {
+      node {
+        title
+        id
+        date
+        _sys {
+          filename
+        }
+      }
+    }
+  }
+  wikiConnection {
+    edges {
+      node {
+        title
+        id
+        date
+        _sys {
+          filename
+        }
+      }
+    }
+  }
+}
+
+query globalQuery {
+  global(relativePath: "index.json") {
+    ...GlobalParts
+  }
+}

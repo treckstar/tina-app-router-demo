@@ -1,0 +1,64 @@
+:root {
+  --color-blog-unknown: #818890;
+  --color-blog-technical: #10b981;
+  --color-blog-project: #3b82f6;
+  --color-blog-wiki: #8b5cf6;
+  /* yellow in light mode is... hard */
+  --color-blog-coaching: #f59e0b;
+  --color-blog-blog: #6b7280;
+}
+
+.dark {
+  --color-blog-yellow: #ffd644;
+  --color-blog-unknown: var(--color-white);
+}
+
+.set-color-blog-current-coaching {
+  --colors-accent-500: var(--color-blog-coaching);
+  --colors-accent-100: var(--color-blog-coaching);
+}
+
+.set-color-blog-current-technical {
+  --colors-accent-500: var(--color-blog-technical);
+  --colors-accent-100: var(--color-blog-technical);
+}
+
+.set-color-blog-current-project {
+  --colors-accent-500: var(--color-blog-project);
+  --colors-accent-100: var(--color-blog-project);
+}
+
+.set-color-blog-current-unknown {
+  --colors-accent-500: var(--color-blog-unknown);
+  --colors-accent-100: var(--color-blog-unknown);
+}
+
+.set-color-blog-current-wiki {
+  --colors-accent-500: var(--color-blog-wiki);
+  --colors-accent-100: var(--color-blog-wiki);
+}
+
+.set-color-blog-current-blog {
+  --colors-accent-500: var(--color-blog-blog);
+  --colors-accent-500: var(--color-blog-blog);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* I kinda feel like this should be the default... 🤷‍♂️ */
+[hidden] {
+  pointer-events: none;
+}
+
+[data-rmiz-wrap='visible'],
+[data-rmiz-wrap='hidden'] {
+  width: 100%;
+  height: 100%;
+  display: block !important;
+}
+
+a {
+  color: var(--colors-accent);
+}
