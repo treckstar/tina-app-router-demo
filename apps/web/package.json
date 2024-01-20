@@ -7,7 +7,7 @@
     "build": "dotenv -e ../../.env tinacms build -- -c \"dotenv -e ../../.env next build\"",
     "postbuild": "node ./lib/scripts/build-algolia-search.js",
     "clean": "rm -rf .next dist node_modules .turbo",
-    "dev": "tinacms dev --verbose -c \"dotenv -e ../../.env next dev\"",
+    "dev": "tinacms dev --datalayer-port 9382 --verbose -c \"dotenv -e ../../.env next dev\"",
     "lint:fix": "eslint . --fix --cache --cache-location \"node_modules/.cache/.eslintcache\" --max-warnings 0",
     "lint": "eslint . --max-warnings 0",
     "preinstall": "npx only-allow pnpm",
