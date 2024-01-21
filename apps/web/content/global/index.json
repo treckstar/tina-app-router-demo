@@ -3,7 +3,7 @@
     "main": [
       {
         "href": "blog",
-        "label": "blog"
+        "label": "articles"
       },
       {
         "href": "wiki",
